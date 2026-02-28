@@ -58,7 +58,7 @@ Provide additional context, clinical examples, or clarification that will help t
       let errorData;
       try {
         errorData = await response.json();
-      } catch (e) {
+      } catch {
         // If we can't parse the error response, provide a generic message
         throw new Error(`API request failed (${response.status} ${response.statusText})`);
       }
