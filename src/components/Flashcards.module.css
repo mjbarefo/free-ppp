@@ -1,0 +1,113 @@
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  font-size: 0.8125rem;
+  font-family: var(--font-ui);
+  color: var(--text-muted);
+}
+
+.card {
+  min-height: 320px;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-paper);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+
+.flipped {
+  background: var(--bg-hover);
+}
+
+.cardLabel {
+  font-size: 0.6875rem;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.cardFront {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.cardBack {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+}
+
+.hint {
+  margin-top: var(--space-lg);
+  font-size: 0.75rem;
+  font-family: var(--font-ui);
+  color: var(--text-faint);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: var(--space-md);
+}
+
+.flipBtn {
+  flex: 1;
+  padding: 14px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flipBtn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-accent);
+}
+
+.nextBtn {
+  flex: 1;
+  padding: 14px;
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nextBtn:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
